@@ -28,6 +28,7 @@ namespace HolaMundo
         private void AceptarButton_Click(object sender, RoutedEventArgs e)
         {
             SaludoTextBlock.Text = "Hola " + NombreTextBox.Text;
+            SaludoTextBlock.Text += "!";
             
         }
                 
