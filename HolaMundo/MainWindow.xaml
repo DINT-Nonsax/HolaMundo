@@ -7,10 +7,11 @@
         mc:Ignorable="d"
         Title="Hola Mundo" Height="450" Width="800">
     <Grid x:Name="AceptarButton">
-        <TextBlock x:Name="SaludoTextBlock" HorizontalAlignment="Left" Margin="200,55,0,0" TextWrapping="Wrap" Text="Hola mundo!" VerticalAlignment="Top" Height="82" Width="426" Foreground="#FFFB0E0E" FontSize="72"/>
+        <TextBlock x:Name="SaludoTextBlock" HorizontalAlignment="Left" Margin="200,55,0,0" TextWrapping="Wrap" Text="Hola mundo!" VerticalAlignment="Top" Height="82" Width="582" Foreground="#FFFB0E0E" FontSize="72"/>
         <TextBlock x:Name="NombreTextBlock" HorizontalAlignment="Left" Margin="200,165,0,0" TextWrapping="Wrap" Text="Nombre:" VerticalAlignment="Top" FontSize="24" />
         <TextBox x:Name="NombreTextBox" HorizontalAlignment="Left" Height="35" Margin="200,221,0,0" TextWrapping="Wrap" Text="&#xD;&#xA;" VerticalAlignment="Top" Width="298" FontSize="24" />
-        <Button x:Name="Button" Content="Aceptar" HorizontalAlignment="Left" Margin="535,221,0,0" VerticalAlignment="Top" Width="91" Height="35" Click="AceptarButton_Click"/>
+        <Button x:Name="AceptarButton1" Content="Aceptar" HorizontalAlignment="Left" Margin="535,221,0,0" VerticalAlignment="Top" Width="91" Height="35" Click="AceptarButton_Click"/>
+        <Button x:Name="LimpiarButton" Content="Limpiar" HorizontalAlignment="Left" Margin="535,287,0,0" VerticalAlignment="Top" Width="91" RenderTransformOrigin="-0.149,-0.025" Height="21" Click="LimpiarButton_Click"/>
 
     </Grid>
 </Window>

@@ -27,10 +27,19 @@ namespace HolaMundo
 
         private void AceptarButton_Click(object sender, RoutedEventArgs e)
         {
-            SaludoTextBlock.Text = "Hola " + NombreTextBox.Text;
-            SaludoTextBlock.Text += "!";
-            
+            if (NombreTextBox.Text == "")
+                SaludoTextBlock.Text = "Hola Mundo!";
+            else
+            {
+                SaludoTextBlock.Text = "Hola " + NombreTextBox.Text + "!";
+                NombreTextBox.Text = "";
+            }            
         }
-                
+
+        private void LimpiarButton_Click(object sender, RoutedEventArgs e)
+        {
+            SaludoTextBlock.Text = "Hola Mundo!";
+            NombreTextBox.Text = "";
+        }
     }
 }
