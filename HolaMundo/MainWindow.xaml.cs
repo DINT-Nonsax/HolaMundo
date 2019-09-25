@@ -41,5 +41,19 @@ namespace HolaMundo
             SaludoTextBlock.Text = "Hola Mundo!";
             NombreTextBox.Text = "";
         }
+
+        private void NombreTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                if (NombreTextBox.Text == "")
+                    SaludoTextBlock.Text = "Hola Mundo!";
+                else
+                {
+                    SaludoTextBlock.Text = "Hola " + NombreTextBox.Text + "!";
+                    NombreTextBox.Text = "";
+                }
+            }
+        }
     }
 }
